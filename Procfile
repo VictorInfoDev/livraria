@@ -1,2 +1,2 @@
-web: gunicorn livraria.wsgi
+web: gunicorn livrariaVictor.wsgi
 
