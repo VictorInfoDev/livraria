@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "Garagem"
+version = "0.1.0"
+description = "Uma Garagem"
+authors = ["Victor Hugo"]
+license = "GPL"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Django = "^4.0.5"
+djangorestframework = "^3.13.1"
+gunicorn = "^20.1.0"
+whitenoise = "^6.2.0"
+
+[tool.poetry.dev-dependencies]
+black = {version = "^22.6.0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
