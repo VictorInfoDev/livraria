@@ -1,0 +1,90 @@
+[
+{
+    "model": "core.autor",
+    "pk": 1,
+    "fields": {
+        "nome": "Daniel Donda",
+        "email": "daniel.donda2022@gmail.com"
+    }
+},
+{
+    "model": "core.categoria",
+    "pk": 1,
+    "fields": {
+        "descricao": "Ação"
+    }
+},
+{
+    "model": "core.categoria",
+    "pk": 2,
+    "fields": {
+        "descricao": "Ciências"
+    }
+},
+{
+    "model": "core.editora",
+    "pk": 1,
+    "fields": {
+        "nome": "Xuasneguer",
+        "site": null
+    }
+},
+{
+    "model": "core.livro",
+    "pk": 1,
+    "fields": {
+        "titulo": "Guia Prático de Implementação da LGPD",
+        "isbn": "978-6556250465",
+        "quantidade": 50,
+        "preco": "35.00",
+        "categoria": 2,
+        "editora": 1,
+        "capa": 1,
+        "autores": [
+            1
+        ]
+    }
+},
+{
+    "model": "core.usuario",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$JXsbR7mwscudxt79o0QkOs$9Sdw7jgXrhZ/4dZj3AWP6dz2ynVJ44zk0XL4rWfAQxg=",
+        "last_login": "2022-10-06T18:28:42Z",
+        "is_superuser": true,
+        "username": "victor.agostini",
+        "first_name": "",
+        "last_name": "",
+        "email": "victoragostini2019@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-10-03T18:03:43Z",
+        "cpf": "12345678912",
+        "telefone": null,
+        "data_nascimento": null,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "core.usuario",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$CHZ7MPE2FMTiirc93kJk2s$IlBCckc2vYZYv5DJ0ctsNI3Xr2Oxt009GLhTcOn8R6M=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "victorhgca",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-10-06T18:50:07.763Z",
+        "cpf": "",
+        "telefone": null,
+        "data_nascimento": null,
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]
