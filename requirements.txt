@@ -24,4 +24,3 @@ tzdata==2022.1 ; python_version >= "3.8" and python_version < "4.0" and sys_plat
 uritemplate==4.1.1 ; python_version >= "3.8" and python_version < "4.0"
 whitenoise==6.2.0 ; python_version >= "3.8" and python_version < "4.0"
 zipp==3.8.1 ; python_version >= "3.8" and python_version < "3.9"
-poetry export --without-hashes > requirements.txt
