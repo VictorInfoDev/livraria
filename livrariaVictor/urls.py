@@ -12,6 +12,8 @@ from core.views import (AutorViewSet, CategoriaViewSet, EditoraViewSet,
                         LivroViewSet)
 from media.router import router as media_router
 
+from uploader.router import router as uploader_router
+
 router = DefaultRouter()
 router.register(r'autores',AutorViewSet)
 router.register(r'categorias',CategoriaViewSet)
@@ -20,6 +22,7 @@ router.register(r'livros',LivroViewSet)
 
 
 urlpatterns = [
+    path("api/media/", include(uploader_router.urls)),
     path('admin/', admin.site.urls),
     path('', include (router.urls)),
     path("token/", TokenObtainPairView.as_view(), name="token_obtain_pair"),

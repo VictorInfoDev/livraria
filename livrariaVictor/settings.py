@@ -17,6 +17,7 @@ environ.Env.read_env((os.path.join(BASE_DIR, '.env')))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = env('SECRET_KEY')
 
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('DEBUG')
 
@@ -37,6 +38,7 @@ INSTALLED_APPS = [
     "rest_framework_simplejwt",
     "media",
     "drf_spectacular",
+    "uploader",
 ]
 
 MIDDLEWARE = [
@@ -134,7 +136,7 @@ AUTH_USER_MODEL = "core.Usuario"
 
 MEDIA_URL = "http://localhost:8000/media/"
 MEDIA_ENDPOINT = "/media/"
-MEDIA_ROOT = os.path.join(BASE_DIR, "media_files/")
+MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
 FILE_UPLOAD_PERMISSIONS = 0o640
 
 SPECTACULAR_SETTINGS = {
